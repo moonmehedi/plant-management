@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="920.0" prefWidth="1525.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.ArifJavaClass.InventController">
+   <children>
+      <SplitPane dividerPositions="0.7620967741935484" layoutX="-2.0" layoutY="182.0" prefHeight="742.0" prefWidth="1527.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="742.0" prefWidth="1097.0" style="-fx-background-color: #f2f3f4;">
+               <children>
+                  <Button fx:id="submit" layoutX="443.0" layoutY="476.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="71.0" prefWidth="203.0" style="-fx-background-color: #fa8072;" text="Submit">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="28.0" />
+                     </font>
+                  </Button>
+                  <DatePicker fx:id="adddate" layoutX="146.0" layoutY="157.0" onAction="#gdate" prefHeight="51.0" prefWidth="788.0" promptText="*Todays date" style="-fx-background-color: #ffebcd;" />
+                  <Button layoutX="484.0" layoutY="600.0" mnemonicParsing="false" onAction="#onHomeBtnClk" prefHeight="26.0" prefWidth="116.0" text="HOME" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="742.0" prefWidth="402.0" style="-fx-background-color: #ffebcd;">
+               <children>
+                  <Button fx:id="report" layoutX="100.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleReportShowButtonAction" style="-fx-background-color: #fa8072;" text="Report Show">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <TextField editable="false" layoutX="-15.0" layoutY="-58.0" prefHeight="245.0" prefWidth="1538.0" style="-fx-background-color: #ffebcd;" text="          Inventory Information">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="96.0" />
+         </font>
+      </TextField>
+      <Text layoutX="496.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Resources" wrappingWidth="406.13671875">
+         <font>
+            <Font name="Britannic Bold" size="62.0" />
+         </font>
+      </Text>
+      <Label layoutX="150.0" layoutY="184.0" prefHeight="61.0" prefWidth="124.0" text="Name">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="290.0" prefHeight="62.0" prefWidth="249.0" text="Adding Date">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="item" layoutX="144.0" layoutY="240.0" prefHeight="51.0" prefWidth="788.0" promptText="*Items Name" style="-fx-background-color: #ffebcd;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="151.0" layoutY="514.0" prefHeight="62.0" prefWidth="166.0" text="Number">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="number" layoutX="148.0" layoutY="578.0" prefHeight="51.0" prefWidth="788.0" promptText="*Serial" style="-fx-background-color: #ffebcd;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="147.0" layoutY="399.0" prefHeight="62.0" prefWidth="203.0" text="Exp.Date">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="exdate" layoutX="145.0" layoutY="466.0" onAction="#gexp" prefHeight="51.0" prefWidth="788.0" promptText="*Expired Date" />
+   </children>
+</AnchorPane>

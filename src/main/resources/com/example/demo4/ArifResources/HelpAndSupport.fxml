@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="920.0" prefWidth="1525.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.ArifJavaClass.HelpAndSupportController">
+   <children>
+      <ImageView fx:id="cbuttton" fitHeight="920.0" fitWidth="1525.0" layoutX="1.0" layoutY="-1.0">
+         <image>
+            <Image url="@../../../../../../../../image/52e11026-8d7a-4ce2-969e-612124fd9357-1920-1080.jpg" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="510.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Be Our Partner " wrappingWidth="428.07861328125">
+         <font>
+            <Font name="Bernard MT Condensed" size="68.0" />
+         </font>
+      </Text>
+      <Text fill="#00ffefe8" layoutX="478.0" layoutY="145.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send us a message about any enquiry or business interest and get a call from our team!" wrappingWidth="732.2000122070312" x="10.0" y="20.0">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="connectbutton" layoutX="433.0" layoutY="592.0" mnemonicParsing="false" onAction="#connect" prefHeight="58.0" prefWidth="626.0" style="-fx-background-color: green;" text="Let us connect to you!">
+         <font>
+            <Font name="Bell MT Bold" size="43.0" />
+         </font>
+      </Button>
+      <TextField fx:id="phone" layoutX="257.0" layoutY="354.0" prefHeight="70.0" prefWidth="1016.0" promptText="Phone*" style="-fx-border-color: #0598ff; -fx-background-color: #fafad2;">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="message" layoutX="255.0" layoutY="450.0" prefHeight="100.0" prefWidth="1014.0" promptText="Your Message" style="-fx-border-color: #0598ff; -fx-background-color: #fafad2;">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="call" editable="false" layoutX="580.0" layoutY="723.0" prefHeight="35.0" prefWidth="353.0" promptText="Call Us: 01721171112" style="-fx-background-color: #fafad2;" text="Call Us: 01721171112">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="mail" layoutX="262.0" layoutY="260.0" prefHeight="70.0" prefWidth="1019.0" promptText="Email*" style="-fx-border-color: #0598ff; -fx-background-color: #fafad2;">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </TextField>
+      <Label fx:id="invalid" layoutX="1000.0" layoutY="261.0" prefHeight="68.0" prefWidth="278.0" style="-fx-background-color: #ff0000;" text="   Email is invalid" visible="false">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Button layoutX="29.0" layoutY="25.0" mnemonicParsing="false" onAction="#onHomeBtnClk" prefHeight="34.0" prefWidth="144.0" text="HOME" />
+   </children>
+</AnchorPane>

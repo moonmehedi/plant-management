@@ -1,0 +1,37 @@
+body { font-family: Arial, Helvetica, sans-serif;font-size:14px;}
+
+iframe { border: none !important;}
+
+/* start factsheet product category */
+#yoo-zoo div.box-t3 {
+	height: 0px;
+	border-top: 0px solid #C8CBCD;
+}
+
+#yoo-zoo div.box-1 {
+	border-left: 0px solid #C8CBCD;
+	border-right: 0px solid #C8CBCD;
+}
+
+#yoo-zoo div.box-b3 {
+	height: 0px;
+	border-bottom: 0px solid #C8CBCD;
+}
+/* end factsheet */
+
+/* tabs fix on popups and print screen */
+#yoo-zoo .item div.pos-content ul li {
+padding-left: 0 !important;
+background: none !important;
+list-style: initial !important;
+}
+
+.yoo-zoo img {
+padding: 0 !important;
+background: none !important;
+}
+
+/** fact sheet author override **/
+#yoo-zoo .item div.pos-description .last{
+	clear: both !important;
+}

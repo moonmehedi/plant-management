@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1250.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.ZishanJavaClass.cropPlanningController">
+   <content>
+      <AnchorPane fx:id="label1" prefHeight="1250.0" prefWidth="1400.0">
+         <children>
+            <Label layoutX="140.0" layoutY="23.0" />
+            <AnchorPane prefHeight="1253.0" prefWidth="200.0" style="-fx-background-color: pink;">
+               <children>
+                  <Button layoutX="33.0" layoutY="664.0" mnemonicParsing="false" onAction="#onbackbtnclk" prefHeight="42.0" prefWidth="104.0" text="BACK" />
+               </children></AnchorPane>
+            <AnchorPane layoutX="200.0" prefHeight="90.0" prefWidth="1195.0" style="-fx-background-color: blue;">
+               <children>
+                  <Label fx:id="season" layoutX="97.0" layoutY="37.0" text="season " />
+                  <Label fx:id="soilQuality" layoutX="241.0" layoutY="37.0" text="soil quality" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="label2" layoutX="200.0" layoutY="199.0" prefHeight="456.0" prefWidth="1195.0" style="-fx-background-color: grey;">
+               <children>
+                  <Hyperlink fx:id="name1" layoutX="42.0" layoutY="39.0" onAction="#name1clk" prefHeight="56.0" prefWidth="325.0" style="-fx-background-color: green;" text="name1" />
+                  <ImageView fx:id="imageView1" fitHeight="351.0" fitWidth="317.0" layoutX="879.0" layoutY="25.0" onMouseClicked="#onimg1clk" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Downloads/agriculture-icon-symbol-creative-sign-from-vector-36577411.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="frst" layoutX="30.0" layoutY="132.0" prefHeight="298.0" prefWidth="774.0" text="Label" />
+                  <Button layoutX="30.0" layoutY="387.0" mnemonicParsing="false" onAction="#interCropingBtn1" prefHeight="25.0" prefWidth="154.0" text="Inter croping" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="199.0" layoutY="713.0" prefHeight="456.0" prefWidth="1195.0" style="-fx-background-color: grey;">
+               <children>
+                  <Hyperlink fx:id="name2" layoutX="42.0" layoutY="39.0" onAction="#name2clk" prefHeight="56.0" prefWidth="325.0" style="-fx-background-color: green;" text="name2" />
+                  <ImageView fx:id="imageView2" fitHeight="351.0" fitWidth="317.0" layoutX="848.0" layoutY="25.0" onMouseClicked="#onimg2clk" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Downloads/agriculture-icon-symbol-creative-sign-from-vector-36577411.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Sec" layoutX="30.0" layoutY="132.0" prefHeight="298.0" prefWidth="774.0" text="Label" />
+                  <Button layoutX="42.0" layoutY="405.0" mnemonicParsing="false" onAction="#interCropingBtn2" prefHeight="25.0" prefWidth="154.0" text="Inter croping" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

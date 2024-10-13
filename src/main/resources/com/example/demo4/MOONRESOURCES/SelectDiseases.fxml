@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1254.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.MoonJAVAClass.SelectDiseasesController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="60.0" prefHeight="30.0" prefWidth="63.0" text="RICE" />
+            <Hyperlink fx:id="name11" layoutX="14.0" layoutY="102.0" onAction="#onName1Clk" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: purple;" text="name11">
+               <font>
+                  <Font size="18.0" />
+               </font></Hyperlink>
+            <Hyperlink fx:id="name22" layoutX="14.0" layoutY="165.0" onAction="#onName2Clk" prefHeight="40.0" prefWidth="170.0" text="name22">
+               <font>
+                  <Font size="18.0" />
+               </font></Hyperlink>
+            <Button layoutX="14.0" layoutY="627.0" mnemonicParsing="false" onAction="#prevBtn" prefHeight="82.0" prefWidth="167.0" text="BACK" />
+            <Hyperlink fx:id="name33" layoutX="16.0" layoutY="218.0" onAction="#onName3Clk" prefHeight="40.0" prefWidth="170.0" text="name33">
+               <font>
+                  <Font size="18.0" />
+               </font></Hyperlink>
+            <Hyperlink fx:id="name44" layoutX="20.0" layoutY="284.0" onAction="#onName4Clk" prefHeight="40.0" prefWidth="170.0" text="name44">
+               <font>
+                  <Font size="18.0" />
+               </font></Hyperlink>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <ScrollPane prefHeight="1350.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane prefHeight="1800.0" prefWidth="1400.0" style="-fx-background-color: yellow;" styleClass="Rice" stylesheets="@Rice.css">
+               <children>
+                  <ImageView fx:id="imgView1" fitHeight="311.0" fitWidth="407.0" layoutX="832.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1514.4546813964844" AnchorPane.leftAnchor="832.0" AnchorPane.rightAnchor="61.0" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@Rice/bacterial_blight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imgView2" fitHeight="262.0" fitWidth="418.0" layoutX="832.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1182.0" AnchorPane.leftAnchor="832.0" AnchorPane.rightAnchor="73.45883178710938" AnchorPane.topAnchor="356.0">
+                     <image>
+                        <Image url="@Rice/bacterial-leaf-streak.jpg" />
+                     </image>
+                  </ImageView>
+                  <Separator layoutX="2.0" layoutY="332.0" prefHeight="12.0" prefWidth="1175.0" style="-fx-background-color: black;" />
+                  <Separator layoutX="2.0" layoutY="667.0" prefHeight="12.0" prefWidth="1176.0" style="-fx-background-color: black;" />
+                  <Hyperlink fx:id="name1" layoutX="14.0" layoutY="54.0" onAction="#onName1Clk" prefHeight="42.0" prefWidth="212.0" text="name1">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font></Hyperlink>
+                  <Hyperlink fx:id="name2" layoutX="14.0" layoutY="372.0" onAction="#onName2Clk" prefHeight="42.0" prefWidth="212.0" text="name2">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font></Hyperlink>
+                  <Label fx:id="lb2" layoutX="16.0" layoutY="89.0" lineSpacing="1.0" prefHeight="236.0" prefWidth="805.0" textAlignment="JUSTIFY" wrapText="true" AnchorPane.bottomAnchor="1153.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="571.0" AnchorPane.topAnchor="411.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="lb1" layoutX="14.0" layoutY="88.0" prefHeight="236.0" prefWidth="817.0" AnchorPane.bottomAnchor="1476.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="569.0" AnchorPane.topAnchor="88.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Separator layoutX="2.0" layoutY="984.0" prefHeight="12.0" prefWidth="1176.0" style="-fx-background-color: black;" />
+                  <ImageView fx:id="imgView4" fitHeight="281.0" fitWidth="381.0" layoutX="831.0" layoutY="1015.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="504.0" AnchorPane.leftAnchor="831.0" AnchorPane.rightAnchor="188.0" AnchorPane.topAnchor="1015.0">
+                     <image>
+                        <Image url="@Rice/blast-neck-panicle.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imgView3" fitHeight="262.0" fitWidth="418.0" layoutX="832.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="847.0" AnchorPane.leftAnchor="832.0" AnchorPane.rightAnchor="73.45883178710938" AnchorPane.topAnchor="691.0">
+                     <image>
+                        <Image url="@Rice/blast-leaf-4.jpg" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink fx:id="name3" layoutX="24.0" layoutY="679.0" onAction="#onName3Clk" prefHeight="42.0" prefWidth="212.0" text="name3">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font></Hyperlink>
+                  <Hyperlink fx:id="name4" layoutX="18.0" layoutY="1015.0" onAction="#onName4Clk" prefHeight="42.0" prefWidth="212.0" text="name4">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label fx:id="lb4" layoutX="14.0" layoutY="1043.0" prefHeight="236.0" prefWidth="811.0" AnchorPane.bottomAnchor="521.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="575.0" AnchorPane.topAnchor="1043.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="lb3" layoutX="16.0" layoutY="725.0" prefHeight="242.0" prefWidth="811.0" AnchorPane.bottomAnchor="833.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="573.0" AnchorPane.topAnchor="725.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

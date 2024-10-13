@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="920.0" prefWidth="1525.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.ArifJavaClass.ReportController">
+    <children>
+        <SplitPane dividerPositions="0.19741454864154248" layoutX="-2.0" layoutY="1.0" orientation="VERTICAL" prefHeight="914.0" prefWidth="1530.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #e0ffff;">
+                    <children>
+                        <Text layoutX="566.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Data Records">
+                            <font>
+                                <Font name="Berlin Sans FB" size="59.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="920.0" prefWidth="1525.0" style="-fx-background-color: #faf0e6;">
+                    <children>
+                        <TableView fx:id="data" layoutX="384.0" layoutY="32.0" prefHeight="560.0" prefWidth="776.0">
+                            <columns>
+                                <TableColumn fx:id="number" prefWidth="150.0" style="-fx-background-color: #e0ffff;" text="Number" />
+                                <TableColumn fx:id="name" prefWidth="150.0" sortable="false" style="-fx-background-color: #ffcba4;" text="Name" />
+                                <TableColumn fx:id="addingDate" prefWidth="150.0" sortable="false" style="-fx-background-color: #87ceeb;" text="Adding Date" />
+                                <TableColumn fx:id="expDate" prefWidth="150.0" sortable="false" style="-fx-background-color: #00ff00;" text="Exp.Date" />
+                        <TableColumn fx:id="expDate1" prefWidth="150.0" sortable="false" style="-fx-background-color: #f0e68c;" text="Remove" />
+                                <!-- Removed the 'time' column since it's not used in your Java code. If you plan to use it, you should add the relevant field and methods in both the ReportData and ReportController classes. -->
+                            </columns>
+                        </TableView>
+                  <Button layoutX="669.0" layoutY="643.0" mnemonicParsing="false" onAction="#onBackBtnClk" prefHeight="26.0" prefWidth="110.0" text="BACK" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

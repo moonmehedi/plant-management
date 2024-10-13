@@ -1,0 +1,59 @@
+.zishan{
+    -fx-background-size:cover;
+-fx-background-color: linear-gradient(to bottom right,#155c77,#1c957b);
+}
+
+.LOADBTN{
+    -fx-background-image:url('Rice/loadbtn.png') ;
+}
+
+.gradient
+{
+-fx-background-color: linear-gradient(to bottom right,#b9ccc0,#156a58);
+}
+.white-form
+{
+-fx-background-color:linear-gradient(to bottom right,#126580,#58ae9b);
+}
+
+.head-label
+{
+-fx-border-color:#617d4d;
+-fx-border-width: 0 0 005px;
+-fx-padding: 0 0 0 5px;
+}
+.find-btn
+{
+-fx-background-color: linear-gradient(to bottom right, #098c53,#246861);
+-fx-background-radius: 5px;
+-fx-cursor:hand;
+-fx-text-fill:#fff;
+-fx-font-size: 14px;
+}
+.find-btn:hover
+{
+-fx-background-color: linear-gradient(to bottom right,#0fb565,#399a8f);
+}
+.text-field
+{
+-fx-background-color:transparent;
+-fx-border-color: linear-gradient(to bottom right, #88c2db,#ffffff);
+-fx-border-width:.5px;
+}
+.text-field:focused
+{
+-fx-border-width:1px;
+}
+.create-btn
+{
+-fx-background-color: transparent;
+-fx-cursor:hand;
+-fx-text-fill:#fff;
+-fx-border-color:#fff;
+-fx-border-width:1px;
+}
+.create-btn:hover
+{
+-fx-background-color: #fff;
+-fx-text-fill:#000;
+}

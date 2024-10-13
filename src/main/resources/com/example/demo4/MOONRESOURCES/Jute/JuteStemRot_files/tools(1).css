@@ -1,0 +1,308 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/tools.css);
+
+
+/* Buttons (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+/* Default */
+#page .button-default,
+#page form.style button,
+#page form.style input[type='button'],
+#page form.style input[type='submit'] {
+	padding: 8px 20px;
+	border: 1px solid #DADADA;
+	background: #F7F7F7;
+	box-shadow: inset 0px 0px 9px rgba(0,0,0,0.07);
+	color: #9D9D9D;
+	text-shadow: 0 1px 0 #FFF; 
+}
+
+#page .button-default:hover,
+#page form.style button:hover,
+#page form.style input[type='button']:hover,
+#page form.style input[type='submit']:hover {
+	border-color: #C5C5C5;
+	background: #E9E9EA;
+	color: #909096 !important;
+}
+
+#page .button-default:active,
+#page form.style button:active,
+#page form.style input[type='button']:active,
+#page form.style input[type='submit']:active {
+	border-color: #B5B5B5;
+	background: #DEDEE0;	
+}
+
+/* Primary */
+.button-primary,
+#page .mod-box-default .button-primary,
+#page .mod-box-grey .button-primary {
+	padding: 8px 20px;
+	border-width: 1px;
+	border-style: solid;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2);
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+	color: #FFF;
+}
+
+.button-primary:hover,
+#page .mod-box-default .button-primary:hover,
+#page .mod-box-grey .button-primary:hover {
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+	color: #FFF;
+}
+
+.bg-colored .button-primary,
+.mod-box-colored .button-primary,
+.mod-box-transparent .button-primary {
+	border: 1px solid rgba(0,0,0,0.18);
+	background: rgba(0,0,0,0.13);
+	box-shadow: none;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+}
+
+.bg-colored .button-primary:hover,
+.mod-box-colored .button-primary:hover,
+.mod-box-transparent .button-primary:hover {
+	border-color: rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.2);
+	color: #FFF;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+}
+
+.bg-colored .button-primary:active,
+.mod-box-colored .button-primary:active,
+.mod-box-transparent .button-primary:active {
+	border-color: rgba(20, 20, 20, 0.25);
+	background: rgba(0,0,0,0.25);
+}
+
+
+/* Images and Objects (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+img.border-box { border: 1px solid #DBDBDB; }
+
+
+/* Lists and Tables (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+/* Line */
+ul.line > li,
+.mod-box-default ul.line > li,
+.mod-box-grey ul.line > li { border-top: 1px solid #DBDBDB; }
+
+.bg-colored ul.line > li,
+.mod-box-colored ul.line > li { border-top: 1px solid rgba(0,0,0,0.2); }
+
+ul.line > li:first-child { border: none; }
+
+/* Check */
+ul.check > li {
+	padding: 2px 0 2px 28px;
+	background: url(../images/tools/list_check.png) 0 0 no-repeat;
+}
+
+.bg-colored ul.check > li,
+.mod-box-colored ul.check > li,
+.mod-box-transparent ul.check > li { background-image: url(../images/tools/list_check_white.png); }
+
+.mod-box-default ul.check > li,
+.mod-box-grey ul.check > li { background-image: url(../images/tools/list_check.png); }
+
+/* Zebra List and Table */
+ul.zebra > li { padding-left: 10px;}
+body ul.zebra > li,
+table.zebra tbody td { border-bottom: 1px solid rgba(0,0,0,0.2); }
+ul.zebra > li:first-child,
+table.zebra tbody tr:first-child td { border-top: 1px solid rgba(0,0,0,0.2); }
+
+ul.zebra > li.odd,
+table.zebra tbody tr.odd { background: url(../images/tools/list_zebra_bg.png) 0 0 repeat; }
+ul.zebra > li:nth-of-type(odd),
+table.zebra tbody tr:nth-of-type(odd) { background: url(../images/tools/list_zebra_bg.png) 0 0 repeat;}
+
+table.zebra caption { color: #999; }
+
+/* Definition Lists
+----------------------------------------------------------------------------------------------------*/
+
+dl.separator dt {	
+	position: relative;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+
+/* border code because of RTL */
+dl.separator dd {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-width: 0 0 0 1px;
+	border-style: solid;
+	border-color: #DDD;
+}
+
+dl.separator dt:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -15px;
+	width: 30px;
+	border-top: 1px solid #DDD;
+}
+
+dl.separator dt:after {
+	content: "";
+	position:absolute;
+	top: -3px;
+	right: -3px;
+	width: 5px;
+	height: 5px;
+	border-radius:6px;
+}
+
+dl.separator dt:first-child:before,
+dl.separator dt:first-child:after { display: none; }
+
+
+/* Text
+----------------------------------------------------------------------------------------------------*/
+
+/* Inline Text Box */
+em.box { 
+	border: 1px solid #DDDDDD;
+	background: #fafafa;
+	border-radius: 3px;
+}
+
+/* Dotted Horizontal Rule */
+hr.dotted { background: url(../images/tools/line_dotted.png) 0 0 repeat-x; }
+
+
+/* Boxes
+----------------------------------------------------------------------------------------------------*/
+
+.box-content {
+	border: 1px solid #DBDBDB;
+	background: #FBFBFB;
+	box-shadow: inset 1px 0px 17px rgba(20, 20, 20, 0.08);
+}
+
+.box-note,
+.box-info,
+.box-warning,
+.box-hint,
+.box-download {
+	background: #fafafa;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.box-info {
+	background: #ebf5fa url(../images/tools/box_info.png) 0 0 no-repeat;
+	border-color: #d2dce1;
+}
+
+.box-warning {
+	background: #fff0eb url(../images/tools/box_warning.png) 0 0 no-repeat;
+	border-color: #ffd7cd;
+}
+
+.box-hint {
+	background:rgba(238, 224, 166, 0.38) url(../images/tools/box_hint.png) 0 0 no-repeat;
+	border-color: #E9C76F;
+}
+
+.box-download {
+	background: #faffe6 url(../images/tools/box_download.png) 0 0 no-repeat;
+	border-color: #dce6be;
+}
+
+.mod-box-colored .box-info,
+.mod-box-transparent .box-info { background-image: url(../images/tools/box_warning_white.png); }
+
+.mod-box-colored .box-hint,
+.mod-box-transparent .box-hint { background-image: url(../images/tools/box_hint_white.png); }
+
+.mod-box-colored .box-warning,
+.mod-box-transparent .box-warning { background-image: url(../images/tools/box_warning_white.png); }
+
+.mod-box-colored .box-download,
+.mod-box-transparent .box-download { background-image: url(../images/tools/box_download_white.png); }
+
+
+/* Forms (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+form.box fieldset { 
+	margin-bottom: 10px;
+	padding: 0 15px 5px;
+	border: 1px solid #DBDBDB;
+}
+
+form.style input, 
+form.style textarea, 
+form.style select { 
+	padding: 7px;
+	border: 1px solid #DBDBDB;
+}
+
+
+/* Social Icons
+----------------------------------------------------------------------------------------------------*/
+
+ul.social-icons {
+	list-style: none;
+	padding: 0;
+	overflow: hidden;
+}
+
+.social-icons li { 
+	float: left;
+	margin-left: 10px; 
+}
+
+.social-icons li:first-child { margin-left: 0; }
+
+.social-icons li a {
+	display: block;
+	width: 27px;
+	height: 27px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.bg-colored .social-icons li a,
+.mod-box-colored .social-icons li a,
+.mod-box-transparent .social-icons li a { 
+	opacity: 0.7;
+	background-image: url(../images/tools/icons_social_white.png);
+}
+
+.bg-colored .social-icons li a:hover,
+.mod-box-colored .social-icons li a:hover,
+.mod-box-transparent .social-icons li a:hover { opacity: 1; }
+
+.social-icons .facebook a { background-position: 0 -80px; }
+.social-icons .facebook a:hover { background-position: 0 -120px; }
+
+.social-icons .twitter a:hover { background-position: 0 -40px; }
+
+.social-icons .xing a { background-position: 0 -160px; }
+.social-icons .xing a:hover { background-position: 0 -200px; }
+
+.social-icons .rss a { background-position: 0 -240px; }
+.social-icons .rss a:hover { background-position: 0 -280px; }
+
+.social-icons .googleplus a { background-position: 0 -320px; }
+.social-icons .googleplus a:hover { background-position: 0 -360px; }
+
+.social-icons .vimeo a { background-position: 0 -400px; }
+.social-icons .vimeo a:hover { background-position: 0 -440px; }
+
+.social-icons .flickr a { background-position: 0 -480px; }
+.social-icons .flickr a:hover { background-position: 0 -520px; }
