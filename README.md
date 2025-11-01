@@ -1,6 +1,6 @@
 # Plant Management System
 
-A comprehensive JavaFX-based desktop application for agricultural management, developed as part of a Java sessional project during second year.
+A comprehensive JavaFX-based desktop application for agricultural management, developed as part of a Java sessional Course: OOPS with JAVA during 2nd Year, Semester-2.
 
 ## 🌱 Project Overview
 
